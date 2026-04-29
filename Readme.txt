@@ -1,5 +1,9 @@
+Project Title - Cloud-Based Industrial Digital Twin Platform for IoT-Integrated 3D Asset Monitoring and Predictive Analytics
+Team Number - 24
+Copyright Project
+
 Team Members
-Sparsh Mittal - 2210990865                                                                                                                             
+Sparsh Mittal - 2210990865                                                                                                                        
 Payal - 2210992037
 Arshpreet Singh - 2210991370
 
