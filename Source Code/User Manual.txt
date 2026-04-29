@@ -1,0 +1,44 @@
+2. User Manual
+This manual explains how to convert your files and interact with the 3D Digital Twin dashboard.
+
+Phase 1: Converting CAD to 3D
+Place your .step file in the project folder.
+
+Update the input_filename in CADConverter.py to match your file name.
+
+Run the script: python CADConverter.py.
+
+A file named new_base_twin.glb will be generated. This file is optimized for the web.
+
+Phase 2: Using the Interactive Dashboard
+Once you open index.html in your browser, use the following controls:
+
+A. Navigation & View
+Rotate View: Left-click and drag anywhere on the screen to orbit around the model.
+
+Pan (Slide): Right-click and drag to slide the camera's focus point.
+
+Zoom (Smooth): Use the mouse scroll wheel to zoom in on specific CAD details.
+
+B. Control Panel (Bottom Center)
+Feature,Action,Description
+Stop/Play Motion - Click Button - "Toggles the automatic ""Studio Drift"" rotation on or off."
+Zoom In (+) - Click Button - Moves the camera 15% closer to the object center.
+Zoom Out (-) - Click Button - Moves the camera 15% further away for a wider view.
+
+
+C. Pick and Place (The Gizmo)
+Click on any part of the 3D model.
+
+Colored Arrows will appear (Red = X, Green = Y, Blue = Z).
+
+Click and drag an arrow to move the model to a new position in the virtual studio.
+
+Note: Automatic rotation is paused while you are dragging the object.
+
+Troubleshooting
+Model is Black: Ensure your new_base_twin.glb was exported with include_normals=True in the Python script.
+
+Buttons not responding: Open the Browser Console (F12) to check if three.js or the model file failed to load.
+
+Missing Colors: Ensure the input file was a STEP AP214/242 file. Standard STL files do not support color data.

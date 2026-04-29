@@ -1,0 +1,49 @@
+1. Installation Guide (Server Setup)
+To see your 3D model, you need a small local server. Choose one of the following methods:
+
+Method A: Visual Studio Code (Recommended)
+Open your project folder in VS Code.
+
+Go to the Extensions view (click the square icon on the left or press Ctrl+Shift+X).
+
+Search for "Live Server" by Ritwick Dey.
+
+Click Install.
+
+Once installed, look at the bottom right of your VS Code window and click "Go Live". Your browser will open the project automatically.
+
+Method B: Python (No Install Needed)
+If you already have Python installed for the CADConverter.py script, you can use its built-in server:
+
+Open your Terminal/Command Prompt in the project folder.
+
+Run the following command:
+
+Bash
+python -m http.server 8000
+Open your browser and type: http://localhost:8000
+
+2. Updated User Manual (The Workflow)
+To successfully view your Digital Twin, follow this exact sequence:
+
+Step 1: Data Conversion
+Run your Python script to prepare the 3D model:
+
+Bash
+python CADConverter.py
+Confirm that new_base_twin.glb appears in your folder.
+
+Step 2: Launching the Dashboard
+Start your Live Server (using the VS Code button or the Python command above).
+
+Navigate to the address provided (usually http://127.0.0.1:5500 or localhost:8000).
+
+The Dashboard:
+
+Auto-Scale: The model will automatically appear, filling 90% of your screen.
+
+Rotation: It will start a slow "Studio Drift." Use the Stop Motion button to freeze it.
+
+Zoom: Use the + / - buttons to inspect CAD details closely.
+
+Move: Click the model to see the Transform Gizmo (arrows) and drag it to "Pick and Place" the object.
